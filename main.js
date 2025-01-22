@@ -3,6 +3,25 @@
 // Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
 // Stampare a schermo la bici con peso minore.
 
+const biciDaCorsa = [
+    { nome: "Pinarello Dogma", peso: 7.2 },
+    { nome: "Specialized Tarmac", peso: 7.5 },
+    { nome: "Trek Madone SLR", peso: 7.1 },
+    { nome: "Cannondale SuperSix EVO", peso: 7.3 }
+];
+
+let element = biciDaCorsa[0].peso;
+
+for (let i = 0; i < biciDaCorsa.length; i++) {
+
+    if (element > biciDaCorsa[i].peso) {
+        element = biciDaCorsa[i]
+    }
+
+    console.log(element)
+}
+
+
 //* Snack2
 // Creare un array di oggetti di squadre di calcio.
 // Ogni squadra avrà diverse proprietà: nome, punti fatti, falli subiti.
